@@ -20,6 +20,3 @@ SysinternalsSuite.zip - Older version of sysinternals suite that still works wit
 WANNACRY_PATCH - The strange singular patch that Miscrosoft released years after Xp's end of support.
 
 WMITools - Old WMI developer package. Works with 2000 and Vista, and 7 with compatability mode and opening the HTML based tools in IE (because it uses active content, blocked by modern browsers)
-
-Powertoys - Windows XP Powertoys 2005 (last version)
-
