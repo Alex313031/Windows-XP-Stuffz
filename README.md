@@ -26,4 +26,4 @@ WANNACRY_PATCH - The strange singular patch that Miscrosoft released years after
 
 WMITools - Old WMI developer package. Works with 2000 and Vista, and 7 with compatability mode and opening the HTML based tools in IE (because it uses active content, blocked by modern browsers)
 
-Also includes DirectX 9c, .Net Framework 4.0.3019, all the Visual C++ Redistributables
+ - Also includes DirectX 9c, .Net Framework 4.0.3019, and all the Visual C++ Redistributables
