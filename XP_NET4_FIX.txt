@@ -1,0 +1,16 @@
+.Net Framework 4.0 Windows XP login hang fix
+
+On a computer that is running a 32-bit Windows operating system:
+
+%systemroot%\Microsoft.NET\Framework\v4.0.30319\ngen.exe update /force /queue
+%systemroot%\Microsoft.NET\Framework\v4.0.30319\ngen.exe executequeueditems
+
+----------------------------------------------------------------------------
+
+On a computer that is running a 64-bit Windows operating system:
+
+%systemroot%\Microsoft.NET\Framework\v4.0.30319\ngen.exe update /force /queue
+%systemroot%\Microsoft.NET\Framework\v4.0.30319\ngen.exe executequeueditems
+
+%systemroot%\Microsoft.NET\Framework64\v4.0.30319\ngen.exe update /force /queue
+%systemroot%\Microsoft.NET\Framework64\v4.0.30319\ngen.exe executequeueditems
