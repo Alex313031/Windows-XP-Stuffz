@@ -26,4 +26,6 @@ WANNACRY_PATCH - The strange singular patch that Miscrosoft released years after
 
 WMITools - Old WMI developer package. Works with 2000 and Vista, and 7 with compatability mode and opening the HTML based tools in IE (because it uses active content, blocked by modern browsers)
 
+AmdAway.zip - Null driver for "Away Mode" on OSes other than Windows XP Media Center Edition.
+
  - Also includes DirectX 9c, .Net Framework 4.0.3019, and all the Visual C++ Redistributables
