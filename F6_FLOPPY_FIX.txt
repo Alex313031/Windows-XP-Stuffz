@@ -1,0 +1,17 @@
+Windows Setup F6 USB Floppy Drive Fix
+
+Create your Storage device driver disk and open textsetup.oem
+
+Add the following lines to the bottom of [HardwareIds.scsi.(device name)]
+
+If this section does not exist you must create it!
+
+If your USB floppy drive still does not work, look for the hardware ID in the floppy drive driver's .inf file, and make sure any legacy floppy drives are disabled in the bios.
+
+id = "USB\VID_03F0&PID_2001", "usbstor" #--HP
+id = "USB\VID_054C&PID_002C", "usbstor" #--Sony
+id = "USB\VID_057B&PID_0001", "usbstor" #--Y-E Data
+id = "USB\VID_0409&PID_0040", "usbstor" #--NEC
+id = "USB\VID_0424&PID_0FDC", "usbstor" #--SMSC
+id = "USB\VID_08BD&PID_1100", "usbstor" #--Iomega
+id = "USB\VID_055D&PID_2020", "usbstor" #--Samsung
