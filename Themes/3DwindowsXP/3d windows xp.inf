@@ -1,0 +1,37 @@
+[version]
+signature = "$CHICAGO$"
+SetupClass=BASE
+
+[DefaultInstall]
+CopyFiles  = CopyMechanism
+AddReg	   = AddGoo
+
+[UninstallInstall]
+DelFiles=RemoveFiles
+DelReg = DelGoo
+
+[DestinationDirs]
+CopyMechanism = 11
+RemoveFiles=11
+
+
+[DelGoo]
+HKLM,"%PATH_WINDOWS%\Uninstall\3D Windows XP"
+
+[AddGoo]
+HKLM,"%PATH_WINDOWS%\Uninstall\3D Windows XP","DisplayName",,"3D Windows XP Screen Saver"
+HKLM,"%PATH_WINDOWS%\Uninstall\3D Windows XP","UninstallString",,"rundll32.exe setupapi.dll,InstallHinfSection UninstallInstall 132 %11%\3D Windows XP.inf"
+HKCU,"Control Panel\Desktop","SCRNSAVE.EXE",,"%11%\3DWind~1.scr"
+
+[CopyMechanism]
+"3D Windows XP.scr",,,4
+"3D Windows XP.inf",,,4
+
+[RemoveFiles]
+"3D Windows XP.scr"
+"3D Windows XP.inf"
+
+[Strings]
+RS= 0x00010000
+RES= 0x00020000
+PATH_WINDOWS = "Software\Microsoft\Windows\CurrentVersion"

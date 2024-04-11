@@ -1,0 +1,161 @@
+; Copyright © Microsoft Corp. 1995-2001
+
+[Theme]
+
+; My Computer
+[CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\DefaultIcon]
+DefaultValue=C:\WINDOWS\Explorer.exe,0
+
+; My Documents
+[CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\DefaultIcon]
+DefaultValue=C:\WINDOWS\SYSTEM32\mydocs.dll,0
+
+; My Network Places
+[CLSID\{208D2C60-3AEA-1069-A2D7-08002B30309D}\DefaultIcon]
+DefaultValue=C:\WINDOWS\system32\SHELL32.dll,17
+
+; Recycle Bin
+[CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+full=C:\WINDOWS\Resources\Themes\Pro\RecycleBinFull.ico,0
+empty=C:\WINDOWS\Resources\Themes\Pro\RecycleBinEmpty.ico,0
+
+
+
+[Control Panel\Colors]
+ActiveTitle=82 151 249
+Background=0 78 152
+Hilight=49 106 197
+HilightText=255 255 255
+TitleText=255 255 255
+Window=255 255 255
+WindowText=0 0 0
+Scrollbar=235 235 228
+InactiveTitle=44 96 178
+Menu=255 255 255
+WindowFrame=0 0 0
+MenuText=0 0 0
+ActiveBorder=212 208 200
+InactiveBorder=212 208 200
+AppWorkspace=128 128 128
+ButtonFace=235 235 228
+ButtonShadow=128 128 128
+GrayText=128 128 128
+ButtonText=0 0 0
+InactiveTitleText=192 192 192
+ButtonHilight=255 255 255
+ButtonDkShadow=64 64 64
+ButtonLight=212 208 200
+InfoText=0 0 0
+InfoWindow=255 255 225
+GradientActiveTitle=53 115 214
+GradientInactiveTitle=44 96 178
+ButtonAlternateFace=181 181 181
+HotTrackingColor=0 0 128
+MenuHilight=206 211 225
+MenuBar=244 244 240
+
+
+[Control Panel\Cursors]
+Arrow=
+Help=
+AppStarting=
+Wait=
+NWPen=
+No=
+SizeNS=
+SizeWE=
+Crosshair=
+IBeam=
+SizeNWSE=
+SizeNESW=
+SizeAll=
+UpArrow=
+DefaultValue=Windows default
+Link=
+
+[Control Panel\Desktop]
+Wallpaper=
+TileWallpaper=0
+WallpaperStyle=2
+Pattern=
+ScreenSaveActive=0
+
+[Control Panel\Desktop\WindowMetrics]
+
+[Metrics]
+IconMetrics=76 0 0 0 75 0 0 0 75 0 0 0 1 0 0 0 245 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 1 0 0 0 0 116 97 104 111 109 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+NonclientMetrics=84 1 0 0 0 0 0 0 16 0 0 0 16 0 0 0 22 0 0 0 22 0 0 0 245 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 188 2 0 0 0 0 0 1 0 0 0 0 116 97 104 111 109 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 15 0 0 0 247 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 188 2 0 0 0 0 0 1 0 0 0 0 116 97 104 111 109 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 0 0 0 19 0 0 0 245 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 1 0 0 0 0 116 97 104 111 109 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 245 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 1 0 0 0 0 116 97 104 111 109 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 245 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 1 0 0 0 0 116 97 104 111 109 97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+
+[boot]
+SCRNSAVE.EXE=%WinDir%system32\logon.scr
+
+
+[MasterThemeSelector]
+MTSM=DABJDKT
+ThemeColorBPP=4
+
+
+[VisualStyles]
+Path=%WinDir%resources\Themes\Pro\Pro.msstyles
+ColorStyle=Default
+Size=Default
+[AppEvents\Schemes\Apps\.Default\.Default\.Current]
+DefaultValue=ding.WAV
+[AppEvents\Schemes\Apps\.Default\AppGPFault\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\Close\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\DeviceConnect\.Current]
+DefaultValue=%WinDir%media\Windows XP Hardware Insert.wav
+[AppEvents\Schemes\Apps\.Default\DeviceDisconnect\.Current]
+DefaultValue=%WinDir%media\Windows XP Hardware Remove.wav
+[AppEvents\Schemes\Apps\.Default\DeviceFail\.Current]
+DefaultValue=%WinDir%media\Windows XP Hardware Fail.wav
+[AppEvents\Schemes\Apps\.Default\LowBatteryAlarm\.Current]
+DefaultValue=%WinDir%media\Windows XP Battery Low.wav
+[AppEvents\Schemes\Apps\.Default\MailBeep\.Current]
+DefaultValue=notify.wav
+[AppEvents\Schemes\Apps\.Default\Maximize\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\MenuCommand\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\MenuPopup\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\Minimize\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\Open\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\PrintComplete\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\RestoreDown\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\RestoreUp\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\RingIn\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\Ringout\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\SystemAsterisk\.Current]
+DefaultValue=chord.WAV
+[AppEvents\Schemes\Apps\.Default\SystemExclamation\.Current]
+DefaultValue=chord.WAV
+[AppEvents\Schemes\Apps\.Default\SystemExit\.Current]
+DefaultValue=%WinDir%Resources\Themes\pro\logoff2k.wav
+[AppEvents\Schemes\Apps\.Default\SystemHand\.Current]
+DefaultValue=chord.WAV
+[AppEvents\Schemes\Apps\.Default\SystemNotification\.Current]
+DefaultValue=%WinDir%media\Windows XP Balloon.wav
+[AppEvents\Schemes\Apps\.Default\SystemQuestion\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\SystemStart\.Current]
+DefaultValue=%WinDir%Resources\Themes\pro\logon2k.wav
+[AppEvents\Schemes\Apps\.Default\SystemStartMenu\.Current]
+DefaultValue=
+[AppEvents\Schemes\Apps\.Default\WindowsLogoff\.Current]
+DefaultValue=%WinDir%media\Windows XP Logoff Sound.wav
+[AppEvents\Schemes\Apps\.Default\WindowsLogon\.Current]
+DefaultValue=%WinDir%media\Windows XP Logon Sound.wav
+[AppEvents\Schemes\Apps\Explorer\EmptyRecycleBin\.Current]
+DefaultValue=recycle.wav
+[AppEvents\Schemes\Apps\Explorer\Navigating\.Current]
+DefaultValue=start.WAV
