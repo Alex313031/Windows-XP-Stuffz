@@ -57,6 +57,7 @@ __PROGS__ - Contains XP compatible versions (and sometimes x64 versions thereof)
   GIMP  
   HP USB Formatter Tool  
   IconViewer  
+  Intel Processor ID Utility  
   DOS Killdisk  
   Meld Merge  
   MP3Tag  
