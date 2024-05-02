@@ -55,9 +55,11 @@ __PROGS__ - Contains XP compatible versions (and sometimes x64 versions thereof)
   Firefox (requires MSVC redist. 2010)  
   Geany  
   GIMP  
+  Git  
   HP USB Formatter Tool  
   IconViewer  
   Intel Processor ID Utility  
+  Intel SSD Toolbox  
   DOS Killdisk  
   Meld Merge  
   MP3Tag  
