@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://www.emailarchitect.net/easendmail/sdk/html/object_tls12.htm -->
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, ::-webkit-calendar-picker-indicator, img.Wirisformula {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: initial;
+}
+html, body {
+    background-color: #181a1b;
+}
+html, body {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+mark {
+    color: #e8e6e3;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #404400 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+}</style>
+    <title>Enable TLS 1.2 on Windows XP/2003/2008/7/2008 R2 in C#, VB.NET, ASP.NET, C++/CLI - Example Code - SMTP
+        Component - User Authentication and SSL Connection</title>
+    <meta name="keywords" content="Send Email, SSL, TLS, TLS 1.2, C#, VB.NET, ASP.NET, Windows XP/2008/7/2008 R2, Example Code, User Authentication, SSL Connection, SMTP Component, Email Component">
+    <meta name="description" content="Enable TLS 1.2 on Windows XP/2003/2008/7/2008 R2, Send email over SSL/TLS in C#, VB.NET, ASP.NET - Example Code - User Authentication and SSL Connection">
+    
+    <link rel="stylesheet" type="text/css" href="./Enable TLS 1.2 on Windows XP_2003_2008_7_2008 R2 in C#, VB.NET, ASP.NET, C++_CLI - Example Code - SMTP Component - User Authentication and SSL Connection_files/doc-content.css"><style class="darkreader darkreader--sync" media="screen"></style>
+
+
+<meta name="darkreader" content="f00183cf08a045da8a2f8d3cd7ba31b2"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: #032029 !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: #0a0a0a !important;
+}
+.tou-uknfeu {
+    background-color: #231603 !important;
+}
+.tou-6i3zyv {
+    background-color: #19576c !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+.google-material-icons {
+    font-family: 'Google Material Icons' !important;
+}
+.google-symbols {
+    font-family: 'Google Symbols Subset', 'Google Symbols' !important;
+}
+.material-icons-extended {
+    font-family: 'Material Icons Extended' !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+.oui-icon {
+    font-family: 'Oui Icons' !important;
+}
+embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }</style></head>
+
+<body>
+    <h1>Enable TLS 1.2 Encryption on Windows XP/2008/7/Windows 2008 R2</h1>
+    <p>
+        TLS is the successor of SSL, EASendMail supports SSL 3.0/TLS 1.0 - TLS 1.2 very well.
+        In EASendMail, ConnectSTARTTLS doesn't mean TLS encryption, it means STARTTLS command in SMTP protocol.
+    </p>
+    <p>
+        You don't have to set any property to enable TLS 1.2 encryption. If your server requires TLS 1.2 encryption, TLS
+        1.2 encryption is used automatically with
+        ConnectSSLAuto, ConnectSTARTTLS or ConnectDirectSSL.
+    </p>
+
+    <p>
+        To enable TLS 1.2 on some legacy systems, you need to install the following update/packages:
+    </p>
+
+    <hr>
+    <h2>Windows XP/2003 32bit (x86)</h2>
+    <ul>
+        <li>
+            <b>POSReady.reg</b>
+            <p>
+                Put the following POSReady text in POSReady.txt, rename to POSReady.reg, right-click Merge, Yes
+                You can also download it from <a href="https://www.emailarchitect.net/webapp/download/PosReady.zip" target="_blank">POSReady.reg</a>.
+            </p>
+            <pre>Windows Registry Editor Version 5.00 
+[HKEY_LOCAL_MACHINE\SYSTEM\WPA\PosReady] 
+"Installed"=dword:00000001
+
+</pre>
+        </li>
+        <li>
+            <b>KB4019276</b>
+            <p>
+                After you merge POSReady.reg, go to:
+                <a href="https://www.catalog.update.microsoft.com/search.aspx?q=kb4019276" target="_blank">https://www.catalog.update.microsoft.com/search.aspx?q=kb4019276</a>
+
+                Download and Install <b>"Update for WES09 and POSReady 2009 (KB4019276)"</b>.
+            </p>
+            <p>
+                More information:
+                <a href="http://support.microsoft.com/kb/4019276" target="_blank">http://support.microsoft.com/kb/4019276</a>
+            </p>
+        </li>
+
+        <li>
+            <b>Add/merge the following registry keys to enable TLS 1.1 and TLS 1.2</b>
+            <pre>Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]
+"DisabledByDefault"=dword:00000000
+
+</pre>
+        </li>
+    </ul>
+
+    <hr>
+    <h2>Windows 2008 SP2</h2>
+    <ul>
+        <li>
+            <b>KB4019276</b>
+            <p>
+                After you merge POSReady.reg, go to:
+                <a href="https://www.catalog.update.microsoft.com/search.aspx?q=kb4019276" target="_blank">https://www.catalog.update.microsoft.com/search.aspx?q=kb4019276</a>
+
+                Download and Install <b>"Update for Windows Server 2008 ... "</b> (select your CPU architecture).
+            </p>
+            <p>
+                More information:
+                <a href="http://support.microsoft.com/kb/4019276" target="_blank">http://support.microsoft.com/kb/4019276</a>
+            </p>
+        </li>
+        <li>
+            <b>Add/merge the following registry keys to enable TLS 1.1 and TLS 1.2</b>
+            <pre>Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]
+"DisabledByDefault"=dword:00000000
+
+</pre>
+        </li>
+    </ul>
+
+    <hr>
+    <h2>Windows 2008 R2/7</h2>
+    <ul>
+        <li>
+            <b>Add/merge the following registry keys to enable TLS 1.1 and TLS 1.2</b>
+            <pre>    Windows Registry Editor Version 5.00
+    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client]
+    "DisabledByDefault"=dword:00000000
+    
+    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server]
+    "DisabledByDefault"=dword:00000000
+    
+    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]
+    "DisabledByDefault"=dword:00000000
+    
+    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]
+    "DisabledByDefault"=dword:00000000
+    
+</pre>
+        </li>
+    </ul>
+
+    <hr>
+    <h2>Enable TLS 1.2 with IE 8.0 on Windows XP</h2>
+    <p>
+        To use WebBrowser Control + OAUTH/XOAUTH2 on Windows XP, you need to enable TLS 1.2 in IE8 like this:
+    </p>
+    <ul>
+        <li>
+            <b>KB4316682</b>
+            <p>
+                Go to:
+                <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4316682" target="_blank">https://www.catalog.update.microsoft.com/Search.aspx?q=KB4316682</a>
+
+                Download and install <b>"Cumulative Update for Internet Explorer 8 for WES09 and POSReady 2009
+                    (KB4316682)"</b>
+
+            </p>
+            <p>
+                More information: <a href="http://support.microsoft.com/kb/4316682" target="_blank">http://support.microsoft.com/kb/4316682</a>
+            </p>
+        </li>
+        <li>
+            <b>KB4230450</b>
+            <p>
+                Go to:
+                <a href="https://www.catalog.update.microsoft.com/search.aspx?q=KB4230450" target="_blank">https://www.catalog.update.microsoft.com/search.aspx?q=KB4230450</a>
+
+                Download and install <b>"Cumulative Security Update for Internet Explorer 8 for WES09 and POSReady 2009
+                    (KB4230450)"</b>
+            </p>
+        </li>
+        <li>
+            <p>
+                After navigating the chain of registry keys, click the key TLS1.1/TLS1.2, in the right panel,
+                right-click "OSVersion",
+                click Modify, enter the Value data shown above, click OK. (you must change "3.6.1.0.0" to "3.5.1.0.0")
+            </p>
+            <pre>Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\AdvancedOptions\CRYPTO\TLS1.1]
+"OSVersion"="3.5.1.0.0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\AdvancedOptions\CRYPTO\TLS1.1]
+"OSVersion"="3.5.1.0.0"
+            </pre>
+        </li>
+        <li>
+            Open IE8, click Tools, Internet Options, Advanced tab, pull the thumb bar all the way down.
+            You should see new checkbox options for "Use TLS 1.1", "Use TLS 1.2". (KB4230450 will install these
+            checkboxes, but they won't work without KB4019276.)
+
+            11) Uncheck "Use TLS 1.0" (insecure). Check "Use TLS 1.1" and "Use TLS 1.2". Click OK.
+        </li>
+    </ul>
+
+    <h2>Enable TLS 1.2 with EWS on Windows XP</h2>
+    <ul>
+        <li><b>KB4467770</b>
+            <p>Go to:
+                <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4467770" target="_blank">https://www.catalog.update.microsoft.com/Search.aspx?q=KB4467770</a>
+                Download and install <b>"Update for WES09 and POSReady 2009 (KB4467770)"</b>
+            </p>
+            <p>
+                More information: <a href="http://support.microsoft.com/kb/4467770" target="_blank">http://support.microsoft.com/kb/4467770</a>
+            </p>
+        </li>
+        <li>
+            <b>Add/merge the following registry keys to enable TLS 1.0/TLS 1.1/TLS 1.2 for WinHttp</b>
+            <pre>Windows Registry Editor Version 5.00                
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
+"DefaultSecureProtocols"=dword:00000a80
+
+</pre>
+        </li>
+    </ul>
+    <h2>Enable TLS 1.1/1.2 with EWS on Windows 7/2008 R2/2012/2012 R2</h2>
+    <ul>
+        <li><b>KB3140245</b>
+            <p>Go to:
+                <a href="https://www.catalog.update.microsoft.com/search.aspx?q=kb3140245" target="_blank">https://www.catalog.update.microsoft.com/search.aspx?q=kb3140245</a>
+                Download and install <b>"Update for [OS] (KB3140245)"</b>
+            </p>
+            <p>
+                More information: <a href="http://support.microsoft.com/kb/3140245" target="_blank">http://support.microsoft.com/kb/3140245</a>
+            </p>
+        </li>
+        <li>
+            <b>Add/merge the following registry keys to enable TLS 1.1/TLS 1.2 for WinHttp</b>
+            <pre>Windows Registry Editor Version 5.00                
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
+"DefaultSecureProtocols"=dword:00000a00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
+"DefaultSecureProtocols"=dword:00000a00
+
+</pre>
+        </li>
+    </ul>
+
+    <h2>Enable TLS Strong Encryption Algorithms in .NET 20 and .NET 4.0</h2>
+    <ul>
+        <li>
+<b>Add/merge the following registry keys</b>
+<pre>Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
+"SchUseStrongCrypto"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727]
+"SchUseStrongCrypto"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]
+"SchUseStrongCrypto"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]
+"SchUseStrongCrypto"=dword:00000001
+    
+</pre>            
+        </li>
+    </ul>
+    <p><b>Online Examples</b></p>
+    <p>
+        <a href="https://www.emailarchitect.net/easendmail/ex/c/2.aspx" target="_blank">Send Email over SSL/TLS -
+            C#</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/ex/vb/2.aspx" target="_blank">Send Email over SSL/TLS -
+            Visual Basic</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/ex/mc/2.aspx" target="_blank">Send Email over SSL/TLS -
+            C++/CLI</a><br>
+    </p>
+    <p><b>Online Tutorial</b></p>
+    <p>
+        <a href="https://www.emailarchitect.net/easendmail/kb/csharp.aspx?cat=1" target="_blank">Send Email over SSL/TLS
+            in C#</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/kb/csharp.aspx?cat=2" target="_blank">Send Email using Gmail
+            in C#</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/kb/csharp.aspx?cat=3" target="_blank">Send Email using Yahoo
+            in C#</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/kb/csharp.aspx?cat=4" target="_blank">Send Email using
+            Hotmail/Live in C#</a><br>
+    </p>
+    <p>
+        <a href="https://www.emailarchitect.net/easendmail/kb/vbnet.aspx?cat=1" target="_blank">Send Email over SSL/TLS
+            in VB</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/kb/vbnet.aspx?cat=2" target="_blank">Send Email using Gmail
+            in VB</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/kb/vbnet.aspx?cat=3" target="_blank">Send Email using Yahoo
+            in VB</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/kb/vbnet.aspx?cat=4" target="_blank">Send Email using
+            Hotmail/Live in VB</a><br>
+    </p>
+    <p>
+        <a href="https://www.emailarchitect.net/easendmail/kb/managedc.aspx?cat=1" target="_blank">Send Email over
+            SSL/TLS in C++/CLI</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/kb/managedc.aspx?cat=2" target="_blank">Send Email using
+            Gmail in C++/CLI</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/kb/managedc.aspx?cat=3" target="_blank">Send Email using
+            Yahoo in C++/CLI</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/kb/managedc.aspx?cat=4" target="_blank">Send Email using
+            Hotmail/Live in C++/CLI</a><br>
+    </p>
+
+
+    <p>
+        <b>See Also</b>
+    </p>
+    <p>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_usage.htm">Using EASendMail SMTP .NET Component</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_ssl.htm">User Authentication and SSL Connection</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_oauth.htm">Using Gmail SMTP OAUTH</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_oauth_service_account.htm">Using Gmail/GSuite Service Account + SMTP OAUTH Authentication</a><br>
+
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_oauth_ews.htm">Using Office365 EWS OAUTH</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_oauth_ews_service.htm">Using Office365 EWS OAUTH in Background Service</a><br>
+
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_oauth_live.htm">Using Hotmail SMTP OAUTH</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_from.htm">From, ReplyTo, Sender and Return-Path</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_domainkeys.htm">DomainKeys and DKIM Signature</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_dnslookup.htm">Send E-mail Directly (Simulating SMTP server)</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_queue.htm">Work with EASendMail Service (Email Queuing)</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_bulk.htm">Bulk Email Sender Guidelines</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_report.htm">Process Bounced Email (Non-Delivery Report) and Email Tracking</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/object_overview.htm">EASendMail .NET Namespace References</a><br>
+        <a href="https://www.emailarchitect.net/easendmail/sdk/html/samples.htm">EASendMail SMTP Component Samples</a>
+    </p>
+    <script src="./Enable TLS 1.2 on Windows XP_2003_2008_7_2008 R2 in C#, VB.NET, ASP.NET, C++_CLI - Example Code - SMTP Component - User Authentication and SSL Connection_files/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="./Enable TLS 1.2 on Windows XP_2003_2008_7_2008 R2 in C#, VB.NET, ASP.NET, C++_CLI - Example Code - SMTP Component - User Authentication and SSL Connection_files/doc-content.js" type="text/javascript"></script>
+
+
+<p><a href="https://www.emailarchitect.net/easendmail/sdk" target="_blank">EASendMail SDK Document Index</a></p><p style="margin-top:30px;"><a href="https://www.emailarchitect.net/" target="_blank">Copyright © 2006 - 2024 AIFEI &amp; AdminSystem Software Limited. All rights reserved.</a></p></body></html>
