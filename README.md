@@ -8,9 +8,11 @@ __directx_Jun2010_redist.exe__ - Latest DirectX redistributable files for XP - 7
 
 __dotNetFx40_Full_x86_x64.exe__ - .NET Framework 4.0.3019 for both 32 and 64 bit.
 
-__dotnetfx351.exe.exe__ - .NET Framework 3.5 Service Pack 1
+__dotnetfx351.exe__ - .NET Framework 3.5 Service Pack 1
 
 __EXFAT_DRIVER.exe__ - Adds native EXFat support (reading, writing, formatting with the format dialog).
+
+__F6_FLOPPY_FIX.txt__ - Describes how to use F6 floppy drivers during Windows setup with a USB floppy drive
 
 __IE8_INSTALL.exe__ - Internet Explorer 8 x86 for Win XP.
 
@@ -30,7 +32,11 @@ __SysinternalsSuite.zip__ - Older version of sysinternals suite that still works
 
 __WANNACRY_PATCH.exe__ - The strange singular patch that Miscrosoft released years after XP's end of support, for the WannaCry vulnerability.
 
+__WinXPPAE_v35.zip__ - Enables PAE on 32 bit XP
+
 __WMITools.exe__ - Old WMI developer package. Works with 2000 and Vista, and 7 with compatability mode and opening the HTML based tools in IE (because it uses active content, blocked by modern browsers)
+
+__XP_NET4_FIX.txt__ - Describes how to fix login hanging after installing .NET Framework 4
 
 ### <ins>Directories</ins>
 
@@ -40,6 +46,8 @@ __MSVC__ - Has all the Visual C++ Redistributables
 
 __x64__ - Has copies of some of these files for 64 bit versions of XP and Server 2003. Also has the Windows MFM + PowerShell 2.0 update.
 
+__reg__ - Contains useful registry files
+
 __Themes__ - Has many official, beta, and unreleased themes from Microsoft, as well as the 3D XP Flag screensaver from Plus! for Windows XP.
 
 ### <ins>Programs</ins>
@@ -48,6 +56,7 @@ __PROGS__ - Contains XP compatible versions (and sometimes x64 versions thereof)
 
   7-Zip 19.00  
   Auslogics Disk Defrag 8.0.24.0  
+  AquaSnap  
   CCleaner  
   Google Chrome  
   CPUSTRES  
@@ -65,6 +74,7 @@ __PROGS__ - Contains XP compatible versions (and sometimes x64 versions thereof)
   MP3Tag  
   mpv  
   Mypal (classic PaleMoon-based one)  
+  Multi-Monitor Taskbar  
   Notepad++  
   Open Hardware Monitor (requires .NET Framework 4)  
   Opera  
@@ -72,6 +82,7 @@ __PROGS__ - Contains XP compatible versions (and sometimes x64 versions thereof)
   QBittorrent  
   rammonitor.exe  
   Resize Enable by Digi Tallis  
+  Resource Hacker  
   VLC Media Player  
   WinTimerTester  
   WiseCare 365  
