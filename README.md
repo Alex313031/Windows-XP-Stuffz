@@ -44,7 +44,7 @@ __AwayMode__ - Drivers for "Away Mode" for Windows XP Media Center Edition, incl
 
 __MSVC__ - Has all the Visual C++ Redistributables
 
-__x64__ - Has copies of some of these files for 64 bit versions of XP and Server 2003. Also has the Windows MFM + PowerShell 2.0 update.
+__x64__ - Has copies of some of these files for 64 bit versions of XP and Server 2003. Also has the Windows MFM + PowerShell 2.0 update, as well as TweakUI for x64.
 
 __reg__ - Contains useful registry files
 
