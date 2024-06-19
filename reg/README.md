@@ -8,4 +8,4 @@ __open_with_notepad_context_menu.reg__ - Adds a right click option on files to o
 
 __no_internet_open_with.reg__ - Removes the "Search Internet for Program" dialog when opening an unknown file type. Skips right to the local program selection box.
 
-__S3USB.reg__ - Enabled USB devices to wake a computer from S3 suspend, when it otherwise isn't working due to certain BIOSes
+__S3USB.reg__ - Enables USB devices to wake a computer from S3 suspend, when it otherwise isn't working due to certain BIOSes.
