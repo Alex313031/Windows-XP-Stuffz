@@ -62,8 +62,9 @@ __PROGS__ - Contains XP compatible versions (and sometimes x64 versions thereof)
   CPUSTRES  
   DiskLED by Helge Klein  
   Firefox (requires MSVC redist. 2010)  
+  Gavotte RAMDisk  
   Geany  
-  GIMP  
+  GIMP 2 + Offline Help Installer  
   Git  
   HP USB Formatter Tool  
   IconViewer  
