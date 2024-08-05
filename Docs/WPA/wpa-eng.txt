@@ -1,0 +1,98 @@
+Inside Microsoft's Windows Product Activation
+---------------------------------------------
+
+Berlin, Germany, July 9, 2001. Fully Licensed GmbH has analyzed the
+internals of Windows Product Activation, Microsoft's anti-piracy
+technology built into Windows XP. "We contribute technical facts to a
+discussion that is currently characterized by uncertainty and
+speculation about XP revealing details of a user's hardware
+configuration, the installed software, or even personal data during
+the activation procedure." says Thomas Lopatic, managing director and
+CTO of Fully Licensed. The comprehensive technical analysis performed
+by the licensing experts proves that in addition to insensitive
+hardware-related information only the individual serial number of each
+copy of Windows XP is transmitted.
+
+Windows Product Activation is designed to enforce the licensing terms
+that govern the use of Windows XP by binding an XP license to a single
+hardware configuration and thus to a single computer. While the
+activation procedure requires data to be transmitted to an activation
+center, Microsoft declines to publish any technical details of the
+information revealed by this data transmission. The lack of facts has
+given rise to speculation. Some users fear that modifying their
+hardware configuration would require re-activation of Windows
+XP. Others fear that details of their hardware configuration could be
+embedded in the transmitted data.
+
+To satisfy the need for technical details, Fully Licensed GmbH has
+performed an in-depth analysis of Windows Product Activation as
+implemented by Windows XP Release Candidate 1. The experts discovered
+that ten different hardware components form the basis for a hardware
+ID, which is sent to the activation central during
+activation. However, due to the method employed to generate the
+hardware ID, it is very likely that many hardware configurations
+result in the same ID. Consequently, determining the actual hardware
+configuration corresponding to a given hardware ID is an infeasible
+task. In addition to the hardware ID only information derived from the
+product key - a kind of serial number accompanying each distributed
+copy of Windows XP - is transmitted.
+
+Moreover, typical hardware updates do not pose any problems
+either. "More than three of the ten hardware components considered
+when calculating the hardware ID have to be replaced - e.g. the
+harddrive, the CD-ROM drive, the microprocessor, and the network
+adapter - to make re-activation necessary. If the hardware ID is
+associated with a notebook that supports a docking-station, the policy
+is still more liberal." says Thomas Lopatic.
+
+"Since our analysis proves that the transmitted information is
+completely innocuous, we are surprised that Microsoft has been that
+vague about the inner workings of WPA for all these months." says
+Matthias Kunze, managing director and CFO of Fully Licensed. "Software
+piracy is still a major problem for all software companies. And we
+think that their interest in raising the bar for software pirates is
+absolutely justified." he adds.
+
+In addition to relying on technical methods to tackle software piracy
+Fully Licensed advocate complementary means to form a holistic
+approach to the problem. Advanced licensing models - e.g. software
+rental or software leasing - offer a commercially attractive
+alternative to the use of pirated software in companies. The necessary
+technological basis has already moved from hype to here. "Software
+watermarking, automated code obfuscation, online license enforcement,
+and license management form parts of the Fully Licensed holistic
+solution for software licensing and software distribution." says
+Thomas Lopatic.
+
+The technical paper covering the in-depth analysis of Windows Product
+Activation as well as a demonstration program including source code is
+available from the Fully Licensed website at
+http://www.licenturion.com/xp/.
+
+About Fully Licensed GmbH
+-------------------------
+
+Fully Licensed GmbH provides a secure and flexible infrastructure for
+online licensing and online distribution of software. It integrates
+software watermarking, automated code obfuscation, license enforcement
+and license management, while preserving the end-user's right to
+privacy. In addition to raising the bar for software pirates by
+technical means, this approach supplies the basis for easy and secure
+realization of advanced licensing models such as software rental or
+software leasing. Fully Licensed GmbH consider themselves to be an
+independent and unbiased mediator between software vendors and
+end-users. Their research and development branch every now and then
+analyzes licensing solutions implemented by other companies.
+
+Contact
+-------
+
+Matthias Kunze <mkunze@licenturion.com>
+
+Fully Licensed GmbH
+Rudower Chaussee 29
+12489 Berlin
+
+Web http://www.licenturion.com
+Tel +49 30 6392-6712
+Fax +49 30 6392-6010

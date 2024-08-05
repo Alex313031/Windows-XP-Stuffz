@@ -1,0 +1,169 @@
+>>
+>> Frequently asked questions and their answers
+>> concerning the Fully Licensed WPA paper
+>>
+>> Fully Licensed GmbH, July 10, 2001
+>>
+
+>> 1. Was Microsoft involved in the creation of the paper?
+
+Microsoft was not involved in the creation of the paper in any
+way. However, we made a draft version available to Microsoft to give
+them a head-start. We consider it to be good etiquette to inform a
+vendor of a pending publication related to one his or her products, so
+that the vendor is able to prepare an official response.
+
+>> 2. Why should we believe you?
+
+We do not expect you to believe us. That's why we have provided our
+complete knowledge about WPA and the XPDec utility. Combine both to
+verify our claims.
+
+>> 3. But Thomas Lopatic, one of your managing directors was born in
+      Unterschleissheim, Germany, which is the town near Munich in
+      which Microsoft's European headquarters are located.
+
+This is a nice coincidence. It is in a way understandable - and at the
+same time highly amusing to us :-) - that this has given rise to
+rumors about the whole paper being a cleverly planned Microsoft
+conspiracy.
+
+Thomas was actually born in Karlsruhe, Germany. However, he was living
+in Unterschleissheim from the 1970s - i.e. long before Microsoft moved
+there - until recently, when he moved to Berlin. That's why some
+records still list Unterschleissheim as the place where he
+lives. Incorrectly interpreting these records led to the rumor that
+Thomas was born in Unterschleissheim.
+
+>> 4. Does Microsoft downplay the paper?
+
+No, most definitely not. The paper really IS harmless. It does not
+provide any information that would help a pirate circumvent WPA.
+
+>> 5. Why did you release details on Windows Product Activation?
+
+We felt that there is a need for facts in the debate about Windows
+Product Activation. Many people suspected that WPA could be abused to
+spy on end-users. Our paper, however, shows that insensitive
+information is transmitted during product activation. From this, it
+can be seen that the facts that we provide really are a necessary
+contribution to the ongoing discussion about WPA.
+
+We think that license enforcement mechanisms will be an important part
+of the future of software distribution via the Internet. Thus, we do
+think that public discussion of technology of this kind must be free
+from bias and it must be based on facts and openness.
+
+We hope that the information that we provide positively affects the
+current debate. The debate is necessary, but it should be based on
+facts and full disclosure of information relevant to the privacy
+question.
+
+>> 6. Do you know how to circumvent Windows Product Activation?
+
+No. We provide insight into which information is transmitted to
+Microsoft during activation. Our paper is important to help people
+understand the impact of WPA on their work and their privacy. We do
+not believe that our paper helps in any way to circumvent the license
+enforcement provided by WPA.
+
+>> 7. Your paper says that Microsoft will err on the user's side.
+
+What our paper shows is that a) no sensitive information is
+transferred to Microsoft and b) typical hardware upgrades do not
+negatively affect an already activated installation of Windows XP.
+
+But, if you either completely re-install Windows XP or modify your
+hardware beyond what is tolerated by product activation, you have to
+re-activate Windows XP.
+
+The important question now is: How often will Microsoft let you
+re-activate? Erring on the user's side would mean that they allow you
+to re-activate as often as you like, which seems to be what Microsoft
+says they will do.
+
+It is, however, impossible to confirm this policy by means of a
+technical analysis.
+
+>> 8. Why doesn't Microsoft know which hardware I use?
+
+Let us consider the case of IDE controllers. In the installation ID
+transmitted to Microsoft they are represented by a 4-bit value. The 4
+bits are obtained by applying the MD5 message digest algorithm to a
+string that uniquely identifies the vendor and model of the IDE
+controller, e.g.
+
+            'PCI\VEN_8086&DEV_7111&SUBSYS_00000000&REV_01'
+
+and picking 4 bits from fixed locations in the resulting 128-bit
+message digest.
+
+With 4 bits, we can represent 16 different values at maximum. However,
+there are far more than 16 different models of IDE controllers out
+there. So, since there are more models than 4-bit values, the above
+hashing procedure must yield the same 4 bits for more than one
+model. The more models there are, the more models will map to a given
+4-bit value.
+
+In contrast to what Microsoft says, the privacy that WPA provides is
+not based on the assumption that it is impossible to invert the
+employed message digest algorithm, i.e. MD5. If we used all 128 bits
+of the message digest derived from a hardware component's
+identification string, this 128-bit value would most probably uniquely
+identify the hardware component. If we used 128 bits, each hardware
+component on earth would probably map to a different value.
+
+What an attacker would then do is build a list of all hardware
+components on this planet and calculate the corresponding 128-bit
+values, which are probably all different. Then finding the hardware
+component that corresponds to a certain 128-bit value is just a table
+lookup away.
+
+Privacy is based on the fact that only a few bits of the resulting
+128-bit message digest are considered. Obviously this leads to lots of
+collisions, i.e. lots of hardware components mapping to a given
+value. If there were 160 different models of IDE controllers, we could
+on average expect 160 / 16 = 10 models to map to the same 4-bit value.
+
+Let us, as another example, consider the MAC address of an ethernet
+adapter. The discussion is technically not 100% accurate, but it
+illustrates the point. The MAC address is a 48-bit value, which means
+that it can theoretically be one of 281,474,976,710,656 different
+values. However, its 10-bit representation in the Installation ID is
+obtained by picking 10 bits from the MD5 hash over an ASCII string
+comprised of the 12 hex digits of the 48-bit value. Picking 10 bits
+leads to 1,024 different results at maximum.
+
+So, on average, we expect
+
+            281,474,976,710,656 / 1,024 = 274,877,906,944
+
+MAC addresses to map to the same 10-bit value. Because of this, nobody
+will be able to obtain the actual MAC address from the 10-bit value,
+since there are 274,877,906,944 candidate MAC addresses from which the
+10-bit value could have been derived.
+
+It is interesting to see that the bit-field that represents the MAC
+address is 10 bits in size, while the bit-field representing the IDE
+controller only consists of 4 bits. Microsoft probably have assigned a
+longer bit-field to a component if they expect more diversity in the
+identification string of this component. The number of different IDE
+controller models is smaller by orders of magnitude than the number of
+different MAC addresses. So, to produce sufficient collisions, they
+decided to use a relatively small bit-field for IDE controllers but
+could still afford to chose a 10-bit bit-field in the case of MAC
+addresses.
+
+>> 9. What are the implications of re-activating after hardware
+      changes?
+
+This is an interesting issue which is not covered in our paper. We
+simply did not think of it. Our mistake. It was brought to our
+attention by an article by Greg Falcon <veloso@verylowsodium.com> on
+www.slashdot.org: If you have to re-activate your installation of
+Windows XP because of hardware modifications, your new hardware
+configuration is embedded in the Installation ID in the form discussed
+above. While this does not enable anyone to find out which components
+you have, it is trivial to find out which components you have
+changed. Just examine which bit-fields have changed their value since
+the original activation.

@@ -32,6 +32,8 @@ __SysinternalsSuite.zip__ - Older version of sysinternals suite that still works
 
 __WANNACRY_PATCH.exe__ - The strange singular patch that Miscrosoft released years after XP's end of support, for the WannaCry vulnerability.
 
+__WindowsXP-SP3-DeployTools.zip__ - Enterprise deployment tools, an updated SP3 release from 2008
+
 __WinXPPAE_v35.zip__ - Enables PAE on 32 bit XP
 
 __WMITools.exe__ - Old WMI developer package. Works with 2000 and Vista, and 7 with compatability mode and opening the HTML based tools in IE (because it uses active content, blocked by modern browsers)
