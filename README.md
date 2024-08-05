@@ -76,6 +76,8 @@ __PROGS__ - Contains XP compatible versions (and sometimes x64 versions thereof)
   mpv  
   Mypal (classic PaleMoon-based one)  
   Multi-Monitor Taskbar  
+  Nano for Win32  
+  Naraeon SSD Tools (Allows you to TRIM an SSD on XP!)  
   Notepad++  
   Open Hardware Monitor (requires .NET Framework 4)  
   Opera  
