@@ -24,7 +24,9 @@ __MSIEXEC_4.5.exe__ - Latest version of MSI installer (XP SP3 comes with 3.0)
 
 __MTPPK12.exe__ - Backports MTP support to XP, note that It will not work at all with WMP9, Works for VIEWING only with WMP10, and that to have all features like write support to devices, you need WMP11. Hence, be careful with choosing this and the WMP10 package.
 
-__ROOTS_UPDATER.zip__ - Program to update the root certificates (needed for Web Browsing and TLS) since they removed the server.
+<!-- __ROOTS_UPDATER.zip__ - Program to update the root certificates (needed for Web Browsing and TLS) since they removed the server. -->
+
+__Windows XP Certificate Updater v1.6__ - Program to update the root certificates (needed for Web Browsing and TLS) since they removed the server.
 
 __rktools.exe__ - Windows 2003 resource kit tools, works just fine on XP, as there was never a resource kit for xp released publicly (though there was a small subset of these released in a small resource kit that one could order with a technet subscription).
 

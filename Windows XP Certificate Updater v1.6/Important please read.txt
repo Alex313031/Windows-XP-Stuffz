@@ -1,0 +1,5 @@
+If you have used the previous version 1.4 or 1.5 of Cert_Updater and
+have not yet updated the URL's after the last Roots and Revoked certificate update,
+please run "DL_URL_UPD.reg".
+
+Here only the entries for Cert_Updater in the registry are changed at SST_Download_URL and SST_Download_URL_D1.

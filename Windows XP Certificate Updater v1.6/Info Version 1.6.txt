@@ -1,0 +1,185 @@
+From version 1.3 of Cert_Updater an additional function has been implemented, which will allow in the future,
+if the servers of MS have problems with the download of the "sst" files, nevertheless the root certificates can be updated.
+If updates for Cert_Updater are available, they will be announced in the forum with a screen shot of Cert_Updater.
+Now there is another possibility to download the current "sst" files which correspond to the screenshot.
+For this the image (CertUpd.jpg) of the screen print must be loaded into the same directory of Cert_Updater, or
+in the same directory of Cert_Updater a text file with the name "Cert_Updater.txt" where the corresponding
+link to the image of the screen printout is inserted.
+
+Note:
+This only works for my announcements in the forum!
+
+__________________________________________________________________________________________________________________________________________
+
+From version 1.4, when an outdated sst file is downloaded, it is now checked for actuality. In this case,
+up to 30 download attempts are carried out, where the intervals between the attempts become larger in time.
+For this function, in the registry under "HKEY_LOCAL_MACHINE\SOFTWARE\Cert_Updater",
+the creation date of the most recently downloaded sst files is stored.
+Furthermore Cert_Updater can now be executed with the parameter -aia or /aia without confirmation.
+It is important to pay attention to small and capital letters.
+
+Available parameters for starting the program
+
+ -aia or /aia for starts without confirmation
+ -aib or /aib for starts without confirmation and Program end automatically in 5 seconds    
+ -aic or /aic for starts silent with logfile                                              (Program end automatically)
+ -aid or /aid for starts silent with logfile and 40 download attempts                     (Program end automatically)
+
+(Logfile can be found under %windir%\CertUpd.log)
+
+
+Available parameters in the registry (HKEY_LOCAL_MACHINE\SOFTWARE\Cert_Updater) for the program (program must be executed at least once)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+end_timer
+
+  0      for the manual termination of the program by the user.
+  1 - x  for the automatic termination of the program x seconds.
+
+Default "end_timer"="0"
+------------------------------------------------------------------------------------------------------------------------------------------
+
+file_for_settings_URL
+
+  0      for off
+
+  for a download link where for the sst files the date ("AUTHDATE" "DELDATE" "ROOTDATE" "UPDDATE" "DISALLOWEDDATE")
+  in the registry can be updated. (certupd.set for settings / encrypted certupd.jpg for settings or for settings including sst files)
+
+  for example: "file_for_settings_URL"="http://URL Name/certupd.set"
+  Only the settings file with the name "certupd.set" or "certupd.jpg" including sst files will be processed!
+
+Default "file_for_settings_URL"="0"
+------------------------------------------------------------------------------------------------------------------------------------------
+
+log_file_enable
+
+  0      for Logfile off
+  1      for Logfile on  (Logfile can be found under %windir%\CertUpd.log)
+
+Default "log_file_enable"="0"
+------------------------------------------------------------------------------------------------------------------------------------------
+
+max_number_of_download_attempts
+
+  0      for off
+  1 - x  Specifies how often a download of the sst files is attempted until the predefined date of the file is the same or greater.
+
+Default "max_number_of_download_attempts"="30"
+------------------------------------------------------------------------------------------------------------------------------------------
+
+SST_Download_URL
+
+  0      if only the updates of file_for_settings_URL are desired (certupd.jpg for settings including sst files)
+
+  for a download link where the sst files (authroots.sst delroots.sst roots.sst updroots.sst disallowedcert.sst)
+  can be downloaded (for various links, see below)
+
+Default "SST_Download_URL"="http://wsus.ds.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en"
+------------------------------------------------------------------------------------------------------------------------------------------
+
+SST_Download_URL_D1
+SST_Download_URL_D2
+SST_Download_URL_D3
+SST_Download_URL_D4
+SST_Download_URL_D5
+
+  0      for off or if only the updates of file_for_settings_URL are desired (certupd.jpg for settings including sst files)
+
+  for a download link where the sst files (authroots.sst delroots.sst roots.sst updroots.sst disallowedcert.sst)
+  can alternatively be downloaded (for various links, see below) where are compared by the date,
+  thereby reducing the error of an obsolete sst file.
+  Attention! The URLs may only be entered in order and the parameter 0 may not be used in between.
+
+Default "SST_Download_URL_D1"="http://ds.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en"
+Default "SST_Download_URL_D2"="0"
+Default "SST_Download_URL_D3"="0"
+Default "SST_Download_URL_D4"="0"
+Default "SST_Download_URL_D5"="0"
+------------------------------------------------------------------------------------------------------------------------------------------
+
+webspider_to_compare (from version 1.6)
+
+  0      for off
+  1      for on
+
+  Comparing the timeliness of the sst files between URLs will only download the more recent sst files,
+  which will save time on slower network or server connections.
+
+Default "webspider_to_compare"="1"
+------------------------------------------------------------------------------------------------------------------------------------------
+
+The following entries are automatically updated when executing the program with newer sst files.
+These entries can be kept up-to-date manually or also with a Settings file (certupd.set), so that no obsolete sst file is used.
+(A download via "file_for_settings_URL" is also planned/possible)
+
+"AUTHDATE"="20180718"
+"DELDATE"="20180706"
+"ROOTDATE"="20180706"
+"UPDDATE"="20180821"
+"DISALLOWEDDATE"="20180427"
+------------------------------------------------------------------------------------------------------------------------------------------
+
+The following entries show the status of the most recent update.
+
+"Last Update Roots"="21.09.2018  21:05  Status OK"
+"Last Update Revoked"="21.09.2018  21:05  Status Ok"
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Initial download link
+
+http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+
+
+Alternative download links (The following listed URLs are also geographically dependent)
+
+http://wsus.ds.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://ds.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://4.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://6.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://7.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://8.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://14.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+
+http://2.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://3.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://10.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+
+http://wsus.ds.www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://au.www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://fg.ds.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://download.windowsupdate.com.c.footprint.net/msdownload/update/v3/static/trustedr/en
+http://au.download.windowsupdate.com.c.footprint.net/msdownload/update/v3/static/trustedr/en
+http://9.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://11.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://2.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://3.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://4.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://6.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://7.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://8.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://9.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://10.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://11.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://14.au.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://origin2.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+http://vzw.wp.ds.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+
+__________________________________________________________________________________________________________________________________________
+
+At the Version 1.5 has corrected several bugs, optimized the program and improved some features.
+
+__________________________________________________________________________________________________________________________________________
+
+At the Version 1.6 has corrected several bugs, optimized the program, improved some features,
+                   an additional function implemented and download URL's updated.
+
+__________________________________________________________________________________________________________________________________________
+
+
+
+
+
