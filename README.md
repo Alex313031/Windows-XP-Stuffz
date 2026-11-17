@@ -91,7 +91,7 @@ __PROGS__ - Contains XP compatible versions (and sometimes x64 versions thereof)
   QBittorrent  
   rammonitor.exe  
   Resize Enable by Digi Tallis  
-  Resource Hacker  
+  Resource Hacker or [Resource Cracker](https://www.pelock.com/products/resource-cracker)  
   VLC Media Player  
   WinTimerTester  
   WiseCare 365  
